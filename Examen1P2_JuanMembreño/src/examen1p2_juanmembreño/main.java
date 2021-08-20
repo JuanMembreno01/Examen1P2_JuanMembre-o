@@ -82,6 +82,36 @@ public class main extends javax.swing.JFrame {
         nombreu1 = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        crearservicio = new javax.swing.JDialog();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        crear = new javax.swing.JButton();
+        mensualidas = new javax.swing.JTextField();
+        calificacions = new javax.swing.JTextField();
+        lanzamientos = new javax.swing.JTextField();
+        duenoss = new javax.swing.JTextField();
+        nombres = new javax.swing.JTextField();
+        eliminarservicio = new javax.swing.JDialog();
+        cb_servicios = new javax.swing.JComboBox<>();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tabla2 = new javax.swing.JTable();
+        jButton2 = new javax.swing.JButton();
+        modificarservicio = new javax.swing.JDialog();
+        cb_mservicios = new javax.swing.JComboBox<>();
+        jLabel25 = new javax.swing.JLabel();
+        calificacions1 = new javax.swing.JTextField();
+        lanzamientos1 = new javax.swing.JTextField();
+        duenoss1 = new javax.swing.JTextField();
+        jLabel26 = new javax.swing.JLabel();
+        nombres1 = new javax.swing.JTextField();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jMenuItem8 = new javax.swing.JMenuItem();
         jCheckBox1 = new javax.swing.JCheckBox();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -91,6 +121,13 @@ public class main extends javax.swing.JFrame {
         jMenu4 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
+        jMenu5 = new javax.swing.JMenu();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenuItem10 = new javax.swing.JMenuItem();
+        jMenuItem11 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
 
         jLabel1.setText("Login");
@@ -456,6 +493,248 @@ public class main extends javax.swing.JFrame {
                     .addContainerGap(155, Short.MAX_VALUE)))
         );
 
+        jLabel19.setText("Servicios");
+
+        jLabel20.setText("Nombre");
+
+        jLabel21.setText("Mensualida");
+
+        jLabel22.setText("calificacion");
+
+        jLabel23.setText("fechalanzamiento");
+
+        jLabel24.setText("Duenos");
+
+        crear.setText("Crear");
+        crear.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                crearMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout crearservicioLayout = new javax.swing.GroupLayout(crearservicio.getContentPane());
+        crearservicio.getContentPane().setLayout(crearservicioLayout);
+        crearservicioLayout.setHorizontalGroup(
+            crearservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(crearservicioLayout.createSequentialGroup()
+                .addGroup(crearservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(crearservicioLayout.createSequentialGroup()
+                        .addGap(377, 377, 377)
+                        .addComponent(jLabel19))
+                    .addGroup(crearservicioLayout.createSequentialGroup()
+                        .addGap(67, 67, 67)
+                        .addGroup(crearservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(crearservicioLayout.createSequentialGroup()
+                                .addComponent(jLabel20)
+                                .addGap(114, 114, 114)
+                                .addComponent(nombres, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(crearservicioLayout.createSequentialGroup()
+                                .addGroup(crearservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel21)
+                                    .addGroup(crearservicioLayout.createSequentialGroup()
+                                        .addGap(11, 11, 11)
+                                        .addGroup(crearservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel23)
+                                            .addComponent(jLabel22)))
+                                    .addComponent(jLabel24))
+                                .addGap(89, 89, 89)
+                                .addGroup(crearservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(duenoss, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(calificacions, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(mensualidas, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lanzamientos, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(crearservicioLayout.createSequentialGroup()
+                        .addGap(371, 371, 371)
+                        .addComponent(crear)))
+                .addContainerGap(398, Short.MAX_VALUE))
+        );
+        crearservicioLayout.setVerticalGroup(
+            crearservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(crearservicioLayout.createSequentialGroup()
+                .addGap(97, 97, 97)
+                .addComponent(jLabel19)
+                .addGap(69, 69, 69)
+                .addGroup(crearservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel20)
+                    .addComponent(nombres, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
+                .addGroup(crearservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(mensualidas, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(45, 45, 45)
+                .addGroup(crearservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22)
+                    .addComponent(calificacions, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(69, 69, 69)
+                .addGroup(crearservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(lanzamientos, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(crearservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(crearservicioLayout.createSequentialGroup()
+                        .addGap(76, 76, 76)
+                        .addComponent(jLabel24))
+                    .addGroup(crearservicioLayout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(duenoss, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(50, 50, 50)
+                .addComponent(crear)
+                .addContainerGap(97, Short.MAX_VALUE))
+        );
+
+        cb_servicios.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cb_serviciosItemStateChanged(evt);
+            }
+        });
+
+        tabla2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Calificacion", "Duenos"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane2.setViewportView(tabla2);
+
+        jButton2.setText("Eliminar");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton2MouseEntered(evt);
+            }
+        });
+
+        javax.swing.GroupLayout eliminarservicioLayout = new javax.swing.GroupLayout(eliminarservicio.getContentPane());
+        eliminarservicio.getContentPane().setLayout(eliminarservicioLayout);
+        eliminarservicioLayout.setHorizontalGroup(
+            eliminarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminarservicioLayout.createSequentialGroup()
+                .addGroup(eliminarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(eliminarservicioLayout.createSequentialGroup()
+                        .addGap(79, 79, 79)
+                        .addComponent(cb_servicios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(eliminarservicioLayout.createSequentialGroup()
+                        .addGap(105, 105, 105)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(eliminarservicioLayout.createSequentialGroup()
+                        .addGap(385, 385, 385)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(76, Short.MAX_VALUE))
+        );
+        eliminarservicioLayout.setVerticalGroup(
+            eliminarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminarservicioLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(cb_servicios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(73, 73, 73)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(77, Short.MAX_VALUE))
+        );
+
+        cb_mservicios.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cb_mserviciosItemStateChanged(evt);
+            }
+        });
+
+        jLabel25.setText("Duenos");
+
+        jLabel26.setText("Nombre");
+
+        jLabel28.setText("calificacion");
+
+        jLabel29.setText("fechalanzamiento");
+
+        jButton3.setText("Modificar");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout modificarservicioLayout = new javax.swing.GroupLayout(modificarservicio.getContentPane());
+        modificarservicio.getContentPane().setLayout(modificarservicioLayout);
+        modificarservicioLayout.setHorizontalGroup(
+            modificarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificarservicioLayout.createSequentialGroup()
+                .addGap(96, 96, 96)
+                .addComponent(cb_mservicios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, modificarservicioLayout.createSequentialGroup()
+                .addContainerGap(289, Short.MAX_VALUE)
+                .addGroup(modificarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, modificarservicioLayout.createSequentialGroup()
+                        .addComponent(jButton3)
+                        .addGap(421, 421, 421))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, modificarservicioLayout.createSequentialGroup()
+                        .addComponent(jLabel26)
+                        .addGap(131, 131, 131)
+                        .addComponent(nombres1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(272, 272, 272))))
+            .addGroup(modificarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(modificarservicioLayout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addGroup(modificarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(modificarservicioLayout.createSequentialGroup()
+                            .addGap(11, 11, 11)
+                            .addGroup(modificarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel29)
+                                .addComponent(jLabel28)))
+                        .addComponent(jLabel25))
+                    .addGap(89, 89, 89)
+                    .addGroup(modificarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(duenoss1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(calificacions1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lanzamientos1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addContainerGap(269, Short.MAX_VALUE)))
+        );
+        modificarservicioLayout.setVerticalGroup(
+            modificarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificarservicioLayout.createSequentialGroup()
+                .addGap(118, 118, 118)
+                .addComponent(cb_mservicios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70)
+                .addGroup(modificarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(nombres1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel26))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 384, Short.MAX_VALUE)
+                .addComponent(jButton3)
+                .addGap(99, 99, 99))
+            .addGroup(modificarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(modificarservicioLayout.createSequentialGroup()
+                    .addGap(338, 338, 338)
+                    .addGroup(modificarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel28)
+                        .addComponent(calificacions1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(69, 69, 69)
+                    .addGroup(modificarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel29)
+                        .addComponent(lanzamientos1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(modificarservicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(modificarservicioLayout.createSequentialGroup()
+                            .addGap(76, 76, 76)
+                            .addComponent(jLabel25))
+                        .addGroup(modificarservicioLayout.createSequentialGroup()
+                            .addGap(44, 44, 44)
+                            .addComponent(duenoss1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addContainerGap(185, Short.MAX_VALUE)))
+        );
+
+        jMenuItem8.setText("jMenuItem8");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jCheckBox1.setText("jCheckBox1");
@@ -499,6 +778,43 @@ public class main extends javax.swing.JFrame {
 
         jMenu2.add(jMenu4);
 
+        jMenu5.setText("Servicios");
+
+        jMenuItem5.setText("Crear");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem5);
+
+        jMenuItem6.setText("Eliminar/Listar");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem6);
+
+        jMenuItem7.setText("Modificar");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem7);
+
+        jMenu2.add(jMenu5);
+
+        jMenuItem9.setText("Agregar pelis");
+        jMenu2.add(jMenuItem9);
+
+        jMenuItem10.setText("Agregar series");
+        jMenu2.add(jMenuItem10);
+
+        jMenuItem11.setText("Agregar minis");
+        jMenu2.add(jMenuItem11);
+
         jMenuBar1.add(jMenu2);
 
         jMenu3.setText("Usuarios");
@@ -534,7 +850,7 @@ public class main extends javax.swing.JFrame {
                 user.setText("");
                 contra.setText("");
                 login.setVisible(false);
-                flag=true;
+                flag = true;
             }
         }
         if (user.getText().equals("david") & contra.getText().equals("1234")) {
@@ -542,53 +858,52 @@ public class main extends javax.swing.JFrame {
             user.setText("");
             contra.setText("");
             login.setVisible(false);
-              flag=true;
-        } 
-        if(flag=false){
+            flag = true;
+        }
+        if (flag = false) {
             JOptionPane.showMessageDialog(this, "Usuario Incorrecto\n Cree un uUsuario");
             user.setText("");
             contra.setText("");
         }
-        
 
 
     }//GEN-LAST:event_jbingresarMouseClicked
 
     private void jbcrearcMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jbcrearcMouseClicked
-       listau.add(new usuarios(nombreu.getText(), apellidou.getName(), correou.getText(), Integer.parseInt(telefonou.getText()), planu.getText(), usuariou.getText(), contrasenau.getText()));
-       JOptionPane.showMessageDialog(this, "Usuario Agregado");
-       nombreu.setText("");
-       apellidou.setText("");
-       correou.setText("");
-       telefonou.setText("");
-       planu.setText("");
-       usuariou.setText("");
-       contrasenau.setText("");
-       creausuario.setVisible(false);
-            for (int i = 0; i < listau.size(); i++) {
-                DefaultComboBoxModel dc
-                        = (DefaultComboBoxModel) cb_usuarios.getModel();
-                dc.addElement(listau.get(i));
-                cb_usuarios.setModel(dc);
-                  DefaultComboBoxModel d
-                        = (DefaultComboBoxModel) cb_usuariosmodificar.getModel();
-                dc.addElement(listau.get(i));
-                cb_usuariosmodificar.setModel(d);
-            }
-            
+        listau.add(new usuarios(nombreu.getText(), apellidou.getName(), correou.getText(), Integer.parseInt(telefonou.getText()), planu.getText(), usuariou.getText(), contrasenau.getText()));
+        JOptionPane.showMessageDialog(this, "Usuario Agregado");
+        nombreu.setText("");
+        apellidou.setText("");
+        correou.setText("");
+        telefonou.setText("");
+        planu.setText("");
+        usuariou.setText("");
+        contrasenau.setText("");
+        creausuario.setVisible(false);
+        for (int i = 0; i < listau.size(); i++) {
+            DefaultComboBoxModel dc
+                    = (DefaultComboBoxModel) cb_usuarios.getModel();
+            dc.addElement(listau.get(i));
+            cb_usuarios.setModel(dc);
+            DefaultComboBoxModel d
+                    = (DefaultComboBoxModel) cb_usuariosmodificar.getModel();
+            dc.addElement(listau.get(i));
+            cb_usuariosmodificar.setModel(d);
+        }
+
     }//GEN-LAST:event_jbcrearcMouseClicked
 
     private void jbnuevousuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jbnuevousuarioMouseClicked
-     abreu();
-     
+        abreu();
+
     }//GEN-LAST:event_jbnuevousuarioMouseClicked
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-      abreu();
+        abreu();
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-         DefaultComboBoxModel modelo
+        DefaultComboBoxModel modelo
                 = new DefaultComboBoxModel(
                         listau.toArray());
         cb_usuarios.setModel(modelo);
@@ -608,55 +923,51 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cb_usuariosItemStateChanged
 
     private void jbeliminausuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jbeliminausuMouseClicked
-         if (tabla1.getSelectedRow() >= 0) {
-                DefaultTableModel modelo
-                        = (DefaultTableModel) tabla1.getModel();
-                for (int i = 0; i < listau.size(); i++) {
-                    int row = tabla1.getSelectedRow();
-                    // Component cuenta = tabla1.getc
-                    String nombre = ((String) modelo.getValueAt(
-                            tabla1.getSelectedRow(), 0));
-                    String apeellido = ((String) modelo.getValueAt(
-                            tabla1.getSelectedRow(), 1));
-                   // System.out.println(cuenta + "  ni" + nombre);
-                    //  tabla1.setModel(modelo);
-                    if (listau.get(i).getNombre().equals(nombre) & listau.get(i).getApellido().equals(apeellido)) {
-                        //  System.out.println("si entra pero no hace nada");
-                       
-                        cb_usuarios.removeItem(i);
-                       
-                        DefaultComboBoxModel modelo1
-                                = new DefaultComboBoxModel(
-                                        listau.toArray());
-                        cb_usuarios.setModel(modelo1);
-                    }
+        if (tabla1.getSelectedRow() >= 0) {
+            DefaultTableModel modelo
+                    = (DefaultTableModel) tabla1.getModel();
+            for (int i = 0; i < listau.size(); i++) {
+                int row = tabla1.getSelectedRow();
+                // Component cuenta = tabla1.getc
+                String nombre = ((String) modelo.getValueAt(
+                        tabla1.getSelectedRow(), 0));
+                String apeellido = ((String) modelo.getValueAt(
+                        tabla1.getSelectedRow(), 1));
+                // System.out.println(cuenta + "  ni" + nombre);
+                //  tabla1.setModel(modelo);
+                if (listau.get(i).getNombre().equals(nombre) & listau.get(i).getApellido().equals(apeellido)) {
+                    //  System.out.println("si entra pero no hace nada");
+
+                    cb_usuarios.removeItem(i);
+
+                    DefaultComboBoxModel modelo1
+                            = new DefaultComboBoxModel(
+                                    listau.toArray());
+                    cb_usuarios.setModel(modelo1);
                 }
-
-                modelo.removeRow(tabla1.getSelectedRow());
-                tabla1.setModel(modelo);
-
-               
-
-                JOptionPane.showMessageDialog(this, " Usuario Eliminado");
-                //tf_edad_maxima.setText(maxima_edad());   
             }
+
+            modelo.removeRow(tabla1.getSelectedRow());
+            tabla1.setModel(modelo);
+
+            JOptionPane.showMessageDialog(this, " Usuario Eliminado");
+            //tf_edad_maxima.setText(maxima_edad());   
+        }
     }//GEN-LAST:event_jbeliminausuMouseClicked
 
     private void cb_usuariosmodificarItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_usuariosmodificarItemStateChanged
-          try {
+        try {
             if (evt.getStateChange() == 2) {
 
                 seleccionado = (usuarios) cb_usuariosmodificar.getSelectedItem();
-            //    seleccionadoPrueba = (alumno) cb_usuariosmodificar.getSelectedItem();
-            this.nombreu1.setText(seleccionado.getNombre());
-            this.apellidou1.setText(seleccionado.getApellido());
-            this.correou1.setText(seleccionado.getCorreo());
-            this.planu1.setText(seleccionado.getTipoplan());
-            this.usuariou1.setText(seleccionado.getUsuario());
-            this.contrasenau1.setText(seleccionado.getContrasena());
-           
-           
-            
+                //    seleccionadoPrueba = (alumno) cb_usuariosmodificar.getSelectedItem();
+                this.nombreu1.setText(seleccionado.getNombre());
+                this.apellidou1.setText(seleccionado.getApellido());
+                this.correou1.setText(seleccionado.getCorreo());
+                this.planu1.setText(seleccionado.getTipoplan());
+                this.usuariou1.setText(seleccionado.getUsuario());
+                this.contrasenau1.setText(seleccionado.getContrasena());
+
             }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Ocurrio un error");
@@ -664,20 +975,169 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cb_usuariosmodificarItemStateChanged
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-       seleccionado = (usuarios) cb_usuariosmodificar.getSelectedItem();
+        seleccionado = (usuarios) cb_usuariosmodificar.getSelectedItem();
         for (int i = 0; i < listau.size(); i++) {
-            if(listau.get(i).getNombre().equals(seleccionado.getNombre())){
+            if (listau.get(i).getNombre().equals(seleccionado.getNombre())) {
                 listau.remove(i);
+            }
         }
-        }
-            
-       listau.add(new usuarios(nombreu1.getText(), apellidou1.getText(), correou1.getText(), Integer.parseInt(telefonou1.getText()), planu1.getText(), usuariou1.getText(), contrasenau1.getText()));
-        
+
+        listau.add(new usuarios(nombreu1.getText(), apellidou1.getText(), correou1.getText(), Integer.parseInt(telefonou1.getText()), planu1.getText(), usuariou1.getText(), contrasenau1.getText()));
+
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        crearservicio();
+
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void crearMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_crearMouseClicked
+        listas.add(new servicios(nombres.getText(), Integer.parseInt(mensualidas.getText()), calificacions.getText(), lanzamientos.getText(), duenoss.getText()));
+        nombres.setText("");
+        mensualidas.setText("");
+        calificacions.setText("");
+        lanzamientos.setText("");
+        duenoss.setText("");
+        for (int i = 0; i < listau.size(); i++) {
+            DefaultComboBoxModel dc
+                    = (DefaultComboBoxModel) cb_servicios.getModel();
+            dc.addElement(listau.get(i));
+            cb_servicios.setModel(dc);
+            DefaultComboBoxModel d
+                    = (DefaultComboBoxModel) cb_mservicios.getModel();
+            dc.addElement(listau.get(i));
+            cb_mservicios.setModel(d);
+            DefaultComboBoxModel dm
+                    = (DefaultComboBoxModel) cb_serviciosa.getModel();
+            dc.addElement(listau.get(i));
+            cb_serviciosa.setModel(dm);
+        }
+
+    }//GEN-LAST:event_crearMouseClicked
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+    DefaultComboBoxModel modelo
+                = new DefaultComboBoxModel(
+                        listau.toArray());
+        cb_servicios.setModel(modelo);
+        eliminas();
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void cb_serviciosItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_serviciosItemStateChanged
+        // TODO add your handling code here:
+            if (evt.getStateChange() == 2) {
+            servicios a = (servicios) cb_servicios.getSelectedItem();
+            Object[] newrow = {a.getNombre(), a.getClasificacin(), a.getNombreempresaduena()};
+            DefaultTableModel modelo
+                    = (DefaultTableModel) tabla2.getModel();
+            modelo.addRow(newrow);
+            tabla2.setModel(modelo);
+            //tf_edad_maxima.setText(maxima_edad());               
+        }
+    }//GEN-LAST:event_cb_serviciosItemStateChanged
+
+    private void jButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2MouseEntered
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+         if (tabla2.getSelectedRow() >= 0) {
+            DefaultTableModel modelo
+                    = (DefaultTableModel) tabla2.getModel();
+            for (int i = 0; i < listas.size(); i++) {
+                int row = tabla2.getSelectedRow();
+                // Component cuenta = tabla1.getc
+                String nombre = ((String) modelo.getValueAt(
+                        tabla2.getSelectedRow(), 0));
+                String apeellido = ((String) modelo.getValueAt(
+                        tabla2.getSelectedRow(), 1));
+                // System.out.println(cuenta + "  ni" + nombre);
+                //  tabla1.setModel(modelo);
+                if (listas.get(i).getNombre().equals(nombre) & listas.get(i).getClasificacin().equals(apeellido)) {
+                    //  System.out.println("si entra pero no hace nada");
+
+                    cb_servicios.removeItem(i);
+
+                    DefaultComboBoxModel modelo1
+                            = new DefaultComboBoxModel(
+                                    listas.toArray());
+                    cb_servicios.setModel(modelo1);
+                }
+            }
+
+            modelo.removeRow(tabla2.getSelectedRow());
+            tabla2.setModel(modelo);
+
+            JOptionPane.showMessageDialog(this, " Servicio  Eliminado");
+            //tf_edad_maxima.setText(maxima_edad());   
+        }
+    }//GEN-LAST:event_jButton2MouseClicked
+
+    private void cb_mserviciosItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_mserviciosItemStateChanged
+        try {
+            if (evt.getStateChange() == 2) {
+
+                sellecionado1 = (servicios) cb_mservicios.getSelectedItem();
+                seleccionados2 = (servicios) cb_mservicios.getSelectedItem();
+                //    seleccionadoPrueba = (alumno) cb_usuariosmodificar.getSelectedItem();
+                this.nombres1.setText(sellecionado1.getNombre());
+                this.calificacions1.setText(sellecionado1.getClasificacin());
+                this.lanzamientos1.setText(sellecionado1.getFechalan());
+                this.duenoss1.setText(sellecionado1.getNombreempresaduena());
+               
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_cb_mserviciosItemStateChanged
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        try {
+            
+            for (int i = 0; i <listas.size(); i++) {
+                if (listas.get(i).getNombre().equals(sellecionado1.getNombre())) {
+                    //  System.out.println("si entra pero no hace nada");
+                   // ap.cargarArchivo();
+                    listas.remove(i);
+                 
+                    cb_servicios.removeItem(i);
+                 
+                    DefaultComboBoxModel modelo1
+                            = new DefaultComboBoxModel(
+                                    listas.toArray());
+                    cb_servicios.setModel(modelo1);
+                }
+            }
+            sellecionado1.setNombre(nombres1.getText());
+            sellecionado1.setNombreempresaduena(duenoss1.getText());
+            sellecionado1.setClasificacin(calificacions1.getText());
+           sellecionado1.setFechalan(lanzamientos1.getText());
+           
+            
+            JOptionPane.showMessageDialog(this, "modificado");;
+           nombres1.setText("");
+            duenoss1.setText("");   
+                   calificacions1.setText("");
+                           lanzamientos1.setText("");;
+            //jd_modificaralumno.setVisible(false);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+    }//GEN-LAST:event_jButton3MouseClicked
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+        // TODO add your handling code here:
+        DefaultComboBoxModel modelo
+                = new DefaultComboBoxModel(
+                        listau.toArray());
+        cb_mservicios.setModel(modelo);
+        modificas();
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -720,22 +1180,48 @@ public class main extends javax.swing.JFrame {
         login.setLocationRelativeTo(this);
         login.setVisible(true);
     }
-private void abreu() {
+
+    private void abreu() {
         creausuario.setModal(true);
         creausuario.pack();
         creausuario.setLocationRelativeTo(this);
         creausuario.setVisible(true);
     }
-private void eliminau() {
+
+    private void eliminau() {
         eliminarusuario.setModal(true);
         eliminarusuario.pack();
         eliminarusuario.setLocationRelativeTo(this);
         eliminarusuario.setVisible(true);
     }
+
+    private void crearservicio() {
+        crearservicio.setModal(true);
+        crearservicio.pack();
+        crearservicio.setLocationRelativeTo(this);
+        crearservicio.setVisible(true);
+    }
+     private void eliminas() {
+        eliminarservicio.setModal(true);
+        eliminarservicio.pack();
+        eliminarservicio.setLocationRelativeTo(this);
+        eliminarservicio.setVisible(true);
+    }
+      private void modificas() {
+        modificarservicio.setModal(true);
+        modificarservicio.pack();
+        modificarservicio.setLocationRelativeTo(this);
+        modificarservicio.setVisible(true);
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem Login2;
     private javax.swing.JTextField apellidou;
     private javax.swing.JTextField apellidou1;
+    private javax.swing.JTextField calificacions;
+    private javax.swing.JTextField calificacions1;
+    private javax.swing.JComboBox<String> cb_mservicios;
+    private javax.swing.JComboBox<String> cb_servicios;
     private javax.swing.JComboBox<String> cb_usuarios;
     private javax.swing.JComboBox<String> cb_usuariosmodificar;
     private javax.swing.JTextField contra;
@@ -743,9 +1229,16 @@ private void eliminau() {
     private javax.swing.JTextField contrasenau1;
     private javax.swing.JTextField correou;
     private javax.swing.JTextField correou1;
+    private javax.swing.JButton crear;
+    private javax.swing.JDialog crearservicio;
     private javax.swing.JDialog creausuario;
+    private javax.swing.JTextField duenoss;
+    private javax.swing.JTextField duenoss1;
+    private javax.swing.JDialog eliminarservicio;
     private javax.swing.JDialog eliminarusuario;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -757,7 +1250,17 @@ private void eliminau() {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -769,23 +1272,39 @@ private void eliminau() {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
+    private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton jbcrearc;
     private javax.swing.JButton jbeliminausu;
     private javax.swing.JButton jbingresar;
     private javax.swing.JButton jbnuevousuario;
+    private javax.swing.JTextField lanzamientos;
+    private javax.swing.JTextField lanzamientos1;
     private javax.swing.JDialog login;
+    private javax.swing.JTextField mensualidas;
+    private javax.swing.JDialog modificarservicio;
     private javax.swing.JDialog modificarusuario;
+    private javax.swing.JTextField nombres;
+    private javax.swing.JTextField nombres1;
     private javax.swing.JTextField nombreu;
     private javax.swing.JTextField nombreu1;
     private javax.swing.JTextField planu;
     private javax.swing.JTextField planu1;
     private javax.swing.JTable tabla1;
+    private javax.swing.JTable tabla2;
     private javax.swing.JTextField telefonou;
     private javax.swing.JTextField telefonou1;
     private javax.swing.JTextField user;
@@ -793,5 +1312,8 @@ private void eliminau() {
     private javax.swing.JTextField usuariou1;
     // End of variables declaration//GEN-END:variables
  ArrayList<usuarios> listau = new ArrayList();
- usuarios seleccionado;
+    ArrayList<servicios> listas = new ArrayList();
+    usuarios seleccionado;
+    servicios sellecionado1;
+    servicios seleccionados2;
 }
