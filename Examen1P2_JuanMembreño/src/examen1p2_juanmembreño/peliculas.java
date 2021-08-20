@@ -9,7 +9,7 @@ package examen1p2_juanmembreño;
  *
  * @author usuario
  */
-public class peliculas extends servicios {
+public class peliculas {
     private String nombre;
     private int duracion;
     private String fechaestreno;

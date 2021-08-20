@@ -9,7 +9,7 @@ package examen1p2_juanmembreño;
  *
  * @author usuario
  */
-public class miiseries extends servicios {
+public class miiseries  {
     private String nombre;
     private int cantemporadas;
     private String genero;

@@ -5,16 +5,22 @@
  */
 package examen1p2_juanmembreño;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author usuario
  */
 public class servicios {
+
     private String nombre;
     private int preciomen;
     private String clasificacin;
     private String fechalan;
     private String nombreempresaduena;
+    private ArrayList<series> listas = new ArrayList();
+    private ArrayList<miiseries> listam = new ArrayList();
+    private ArrayList<peliculas> listap = new ArrayList();
 
     public servicios() {
     }
@@ -67,10 +73,33 @@ public class servicios {
         this.nombreempresaduena = nombreempresaduena;
     }
 
+    public ArrayList<series> getListas() {
+        return listas;
+    }
+
+    public void setListas(ArrayList<series> listas) {
+        this.listas = listas;
+    }
+
+    public ArrayList<miiseries> getListam() {
+        return listam;
+    }
+
+    public void setListam(ArrayList<miiseries> listam) {
+        this.listam = listam;
+    }
+
+    public ArrayList<peliculas> getListap() {
+        return listap;
+    }
+
+    public void setListap(ArrayList<peliculas> listap) {
+        this.listap = listap;
+    }
+
     @Override
     public String toString() {
         return "servicios{" + "nombre=" + nombre + ", preciomen=" + preciomen + ", clasificacin=" + clasificacin + ", fechalan=" + fechalan + ", nombreempresaduena=" + nombreempresaduena + '}';
     }
-    
-            
+
 }

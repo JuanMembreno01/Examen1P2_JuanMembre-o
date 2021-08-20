@@ -9,7 +9,7 @@ package examen1p2_juanmembreño;
  *
  * @author usuario
  */
-public class series extends servicios {
+public class series {
     private String nombre;
     private int cantetm;
    private String clasificaion;
