@@ -112,6 +112,25 @@ public class main extends javax.swing.JFrame {
         jLabel29 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jMenuItem8 = new javax.swing.JMenuItem();
+        agregarpelis = new javax.swing.JDialog();
+        cb_serviciosa = new javax.swing.JComboBox<>();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        duracionp = new javax.swing.JTextField();
+        fecha1p = new javax.swing.JTextField();
+        fecha2p = new javax.swing.JTextField();
+        descripcionp = new javax.swing.JTextField();
+        nombrep = new javax.swing.JTextField();
+        jButton4 = new javax.swing.JButton();
+        jLabel35 = new javax.swing.JLabel();
+        verpelis = new javax.swing.JDialog();
+        mp = new javax.swing.JComboBox<>();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jCheckBox1 = new javax.swing.JCheckBox();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -129,6 +148,10 @@ public class main extends javax.swing.JFrame {
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenuItem11 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
+        jMenuItem12 = new javax.swing.JMenuItem();
+        jMenuItem13 = new javax.swing.JMenuItem();
+        jMenuItem14 = new javax.swing.JMenuItem();
 
         jLabel1.setText("Login");
 
@@ -735,6 +758,156 @@ public class main extends javax.swing.JFrame {
 
         jMenuItem8.setText("jMenuItem8");
 
+        cb_serviciosa.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cb_serviciosaItemStateChanged(evt);
+            }
+        });
+
+        jLabel27.setText("nombre");
+
+        jLabel30.setText("duracion");
+
+        jLabel31.setText("fecha 1");
+
+        jLabel32.setText("fecha 2");
+
+        jLabel33.setText("descrippcion");
+
+        jLabel34.setText("Agregar pelis");
+
+        jButton4.setText("Agregar pelis");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
+
+        jLabel35.setText("Aque servicio le agregara la pelicula");
+
+        javax.swing.GroupLayout agregarpelisLayout = new javax.swing.GroupLayout(agregarpelis.getContentPane());
+        agregarpelis.getContentPane().setLayout(agregarpelisLayout);
+        agregarpelisLayout.setHorizontalGroup(
+            agregarpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(agregarpelisLayout.createSequentialGroup()
+                .addGap(61, 61, 61)
+                .addGroup(agregarpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(agregarpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(agregarpelisLayout.createSequentialGroup()
+                            .addGap(227, 227, 227)
+                            .addComponent(jLabel34))
+                        .addGroup(agregarpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(agregarpelisLayout.createSequentialGroup()
+                                .addComponent(jLabel32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(fecha2p, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(agregarpelisLayout.createSequentialGroup()
+                                .addComponent(jLabel31)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(fecha1p, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(agregarpelisLayout.createSequentialGroup()
+                                .addComponent(jLabel30)
+                                .addGap(160, 160, 160)
+                                .addComponent(duracionp, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(agregarpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(agregarpelisLayout.createSequentialGroup()
+                                .addComponent(jLabel33)
+                                .addGap(146, 146, 146)
+                                .addComponent(descripcionp, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(agregarpelisLayout.createSequentialGroup()
+                                .addComponent(jLabel27)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(agregarpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cb_serviciosa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(nombrep, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(agregarpelisLayout.createSequentialGroup()
+                        .addComponent(jLabel35)
+                        .addGap(421, 421, 421)))
+                .addContainerGap(194, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, agregarpelisLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton4)
+                .addGap(312, 312, 312))
+        );
+        agregarpelisLayout.setVerticalGroup(
+            agregarpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(agregarpelisLayout.createSequentialGroup()
+                .addGap(87, 87, 87)
+                .addComponent(jLabel34)
+                .addGap(23, 23, 23)
+                .addGroup(agregarpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cb_serviciosa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel35))
+                .addGap(39, 39, 39)
+                .addGroup(agregarpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(agregarpelisLayout.createSequentialGroup()
+                        .addGroup(agregarpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel27)
+                            .addComponent(nombrep, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(28, 28, 28)
+                        .addGroup(agregarpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel30)
+                            .addComponent(duracionp, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(31, 31, 31)
+                        .addGroup(agregarpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel31)
+                            .addComponent(fecha1p, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(35, 35, 35)
+                        .addGroup(agregarpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel32)
+                            .addComponent(fecha2p, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(53, 53, 53)
+                        .addComponent(jLabel33))
+                    .addComponent(descripcionp, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addComponent(jButton4)
+                .addGap(43, 43, 43))
+        );
+
+        mp.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Noombre", "Duracion", "Estreno"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane3.setViewportView(jTable1);
+
+        javax.swing.GroupLayout verpelisLayout = new javax.swing.GroupLayout(verpelis.getContentPane());
+        verpelis.getContentPane().setLayout(verpelisLayout);
+        verpelisLayout.setHorizontalGroup(
+            verpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(verpelisLayout.createSequentialGroup()
+                .addGroup(verpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(verpelisLayout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addComponent(mp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(verpelisLayout.createSequentialGroup()
+                        .addGap(77, 77, 77)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 734, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(49, Short.MAX_VALUE))
+        );
+        verpelisLayout.setVerticalGroup(
+            verpelisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(verpelisLayout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addComponent(mp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(63, 63, 63)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(199, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jCheckBox1.setText("jCheckBox1");
@@ -807,6 +980,11 @@ public class main extends javax.swing.JFrame {
         jMenu2.add(jMenu5);
 
         jMenuItem9.setText("Agregar pelis");
+        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem9ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem9);
 
         jMenuItem10.setText("Agregar series");
@@ -819,6 +997,20 @@ public class main extends javax.swing.JFrame {
 
         jMenu3.setText("Usuarios");
         jMenu3.setEnabled(false);
+
+        jMenu6.setText("Servicios");
+
+        jMenuItem12.setText("Ver pelis");
+        jMenu6.add(jMenuItem12);
+
+        jMenuItem13.setText("jMenuItem13");
+        jMenu6.add(jMenuItem13);
+
+        jMenuItem14.setText("jMenuItem14");
+        jMenu6.add(jMenuItem14);
+
+        jMenu3.add(jMenu6);
+
         jMenuBar1.add(jMenu3);
 
         setJMenuBar(jMenuBar1);
@@ -1139,6 +1331,40 @@ public class main extends javax.swing.JFrame {
         modificas();
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        int b=0;
+        for (int i = 0; i < listas.size(); i++) {
+            if(listas.get(i).getNombre().equals(selecionadoT.getNombre())){
+          b=i;
+            }
+        }
+        listas.get(b).getListap().add(new peliculas(nombrep.getText(), Integer.parseInt(duracionp.getText()), fecha1p.getText(), fecha2p.getText(),descripcionp.getText()));
+    }//GEN-LAST:event_jButton4MouseClicked
+
+    private void cb_serviciosaItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_serviciosaItemStateChanged
+        
+                 try {
+            if (evt.getStateChange() == 2) {
+
+                selecionadoT = (servicios) cb_serviciosa.getSelectedItem();
+               // seleccionados2 = (servicios) cb_mservicios.getSelectedItem();
+                //    seleccionadoPrueba = (alumno) cb_usuariosmodificar.getSelectedItem();
+               
+               
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }  
+    }//GEN-LAST:event_cb_serviciosaItemStateChanged
+
+    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+         DefaultComboBoxModel modelo
+                = new DefaultComboBoxModel(
+                        listau.toArray());
+        cb_serviciosa.setModel(modelo);
+        agreap();
+    }//GEN-LAST:event_jMenuItem9ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1213,15 +1439,23 @@ public class main extends javax.swing.JFrame {
         modificarservicio.setLocationRelativeTo(this);
         modificarservicio.setVisible(true);
     }
+          private void agreap() {
+        agregarpelis.setModal(true);
+        agregarpelis.pack();
+        agregarpelis.setLocationRelativeTo(this);
+        agregarpelis.setVisible(true);
+    }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem Login2;
+    private javax.swing.JDialog agregarpelis;
     private javax.swing.JTextField apellidou;
     private javax.swing.JTextField apellidou1;
     private javax.swing.JTextField calificacions;
     private javax.swing.JTextField calificacions1;
     private javax.swing.JComboBox<String> cb_mservicios;
     private javax.swing.JComboBox<String> cb_servicios;
+    private javax.swing.JComboBox<String> cb_serviciosa;
     private javax.swing.JComboBox<String> cb_usuarios;
     private javax.swing.JComboBox<String> cb_usuariosmodificar;
     private javax.swing.JTextField contra;
@@ -1232,13 +1466,18 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JButton crear;
     private javax.swing.JDialog crearservicio;
     private javax.swing.JDialog creausuario;
+    private javax.swing.JTextField descripcionp;
     private javax.swing.JTextField duenoss;
     private javax.swing.JTextField duenoss1;
+    private javax.swing.JTextField duracionp;
     private javax.swing.JDialog eliminarservicio;
     private javax.swing.JDialog eliminarusuario;
+    private javax.swing.JTextField fecha1p;
+    private javax.swing.JTextField fecha2p;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1259,9 +1498,16 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1273,10 +1519,14 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem12;
+    private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem14;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
@@ -1287,6 +1537,8 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTable jTable1;
     private javax.swing.JButton jbcrearc;
     private javax.swing.JButton jbeliminausu;
     private javax.swing.JButton jbingresar;
@@ -1297,6 +1549,8 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JTextField mensualidas;
     private javax.swing.JDialog modificarservicio;
     private javax.swing.JDialog modificarusuario;
+    private javax.swing.JComboBox<String> mp;
+    private javax.swing.JTextField nombrep;
     private javax.swing.JTextField nombres;
     private javax.swing.JTextField nombres1;
     private javax.swing.JTextField nombreu;
@@ -1310,10 +1564,12 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JTextField user;
     private javax.swing.JTextField usuariou;
     private javax.swing.JTextField usuariou1;
+    private javax.swing.JDialog verpelis;
     // End of variables declaration//GEN-END:variables
  ArrayList<usuarios> listau = new ArrayList();
     ArrayList<servicios> listas = new ArrayList();
     usuarios seleccionado;
     servicios sellecionado1;
     servicios seleccionados2;
+    servicios selecionadoT;
 }
