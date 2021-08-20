@@ -131,6 +131,19 @@ public class main extends javax.swing.JFrame {
         mp = new javax.swing.JComboBox<>();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        agregarseries = new javax.swing.JDialog();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
         jCheckBox1 = new javax.swing.JCheckBox();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -908,6 +921,81 @@ public class main extends javax.swing.JFrame {
                 .addContainerGap(199, Short.MAX_VALUE))
         );
 
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jLabel36.setText("Agregar series");
+
+        jLabel37.setText("Nombre");
+
+        jLabel38.setText("Cntidad de temporadas");
+
+        jLabel39.setText("Clasificacion oor Edad");
+
+        jLabel40.setText("ano estrno ");
+
+        jLabel41.setText("cantidad de actores involucrados");
+
+        javax.swing.GroupLayout agregarseriesLayout = new javax.swing.GroupLayout(agregarseries.getContentPane());
+        agregarseries.getContentPane().setLayout(agregarseriesLayout);
+        agregarseriesLayout.setHorizontalGroup(
+            agregarseriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, agregarseriesLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel36)
+                .addGap(349, 349, 349))
+            .addGroup(agregarseriesLayout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addGroup(agregarseriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(agregarseriesLayout.createSequentialGroup()
+                        .addComponent(jLabel41)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(agregarseriesLayout.createSequentialGroup()
+                        .addGroup(agregarseriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel38)
+                            .addComponent(jLabel39)
+                            .addComponent(jLabel40)
+                            .addComponent(jLabel37))
+                        .addGap(73, 73, 73)
+                        .addGroup(agregarseriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(246, Short.MAX_VALUE))
+        );
+        agregarseriesLayout.setVerticalGroup(
+            agregarseriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(agregarseriesLayout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(jLabel36)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addGroup(agregarseriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel37)
+                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addGroup(agregarseriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(agregarseriesLayout.createSequentialGroup()
+                        .addGroup(agregarseriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel38)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(58, 58, 58)
+                        .addComponent(jLabel39))
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addGroup(agregarseriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel40)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(55, 55, 55)
+                .addGroup(agregarseriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel41)
+                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(157, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jCheckBox1.setText("jCheckBox1");
@@ -988,6 +1076,11 @@ public class main extends javax.swing.JFrame {
         jMenu2.add(jMenuItem9);
 
         jMenuItem10.setText("Agregar series");
+        jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem10ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem10);
 
         jMenuItem11.setText("Agregar minis");
@@ -1212,7 +1305,7 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_crearMouseClicked
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
-    DefaultComboBoxModel modelo
+        DefaultComboBoxModel modelo
                 = new DefaultComboBoxModel(
                         listau.toArray());
         cb_servicios.setModel(modelo);
@@ -1221,7 +1314,7 @@ public class main extends javax.swing.JFrame {
 
     private void cb_serviciosItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_serviciosItemStateChanged
         // TODO add your handling code here:
-            if (evt.getStateChange() == 2) {
+        if (evt.getStateChange() == 2) {
             servicios a = (servicios) cb_servicios.getSelectedItem();
             Object[] newrow = {a.getNombre(), a.getClasificacin(), a.getNombreempresaduena()};
             DefaultTableModel modelo
@@ -1237,7 +1330,7 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2MouseEntered
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-         if (tabla2.getSelectedRow() >= 0) {
+        if (tabla2.getSelectedRow() >= 0) {
             DefaultTableModel modelo
                     = (DefaultTableModel) tabla2.getModel();
             for (int i = 0; i < listas.size(); i++) {
@@ -1280,7 +1373,7 @@ public class main extends javax.swing.JFrame {
                 this.calificacions1.setText(sellecionado1.getClasificacin());
                 this.lanzamientos1.setText(sellecionado1.getFechalan());
                 this.duenoss1.setText(sellecionado1.getNombreempresaduena());
-               
+
             }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Ocurrio un error");
@@ -1289,15 +1382,15 @@ public class main extends javax.swing.JFrame {
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
         try {
-            
-            for (int i = 0; i <listas.size(); i++) {
+
+            for (int i = 0; i < listas.size(); i++) {
                 if (listas.get(i).getNombre().equals(sellecionado1.getNombre())) {
                     //  System.out.println("si entra pero no hace nada");
-                   // ap.cargarArchivo();
+                    // ap.cargarArchivo();
                     listas.remove(i);
-                 
+
                     cb_servicios.removeItem(i);
-                 
+
                     DefaultComboBoxModel modelo1
                             = new DefaultComboBoxModel(
                                     listas.toArray());
@@ -1307,14 +1400,13 @@ public class main extends javax.swing.JFrame {
             sellecionado1.setNombre(nombres1.getText());
             sellecionado1.setNombreempresaduena(duenoss1.getText());
             sellecionado1.setClasificacin(calificacions1.getText());
-           sellecionado1.setFechalan(lanzamientos1.getText());
-           
-            
+            sellecionado1.setFechalan(lanzamientos1.getText());
+
             JOptionPane.showMessageDialog(this, "modificado");;
-           nombres1.setText("");
-            duenoss1.setText("");   
-                   calificacions1.setText("");
-                           lanzamientos1.setText("");;
+            nombres1.setText("");
+            duenoss1.setText("");
+            calificacions1.setText("");
+            lanzamientos1.setText("");;
             //jd_modificaralumno.setVisible(false);
 
         } catch (Exception e) {
@@ -1332,38 +1424,44 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
-        int b=0;
+        int b = 0;
         for (int i = 0; i < listas.size(); i++) {
-            if(listas.get(i).getNombre().equals(selecionadoT.getNombre())){
-          b=i;
+            if (listas.get(i).getNombre().equals(selecionadoT.getNombre())) {
+                b = i;
             }
         }
-        listas.get(b).getListap().add(new peliculas(nombrep.getText(), Integer.parseInt(duracionp.getText()), fecha1p.getText(), fecha2p.getText(),descripcionp.getText()));
+        listas.get(b).getListap().add(new peliculas(nombrep.getText(), Integer.parseInt(duracionp.getText()), fecha1p.getText(), fecha2p.getText(), descripcionp.getText()));
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void cb_serviciosaItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_serviciosaItemStateChanged
-        
-                 try {
+
+        try {
             if (evt.getStateChange() == 2) {
 
                 selecionadoT = (servicios) cb_serviciosa.getSelectedItem();
-               // seleccionados2 = (servicios) cb_mservicios.getSelectedItem();
+                // seleccionados2 = (servicios) cb_mservicios.getSelectedItem();
                 //    seleccionadoPrueba = (alumno) cb_usuariosmodificar.getSelectedItem();
-               
-               
+
             }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Ocurrio un error");
-        }  
+        }
     }//GEN-LAST:event_cb_serviciosaItemStateChanged
 
     private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
-         DefaultComboBoxModel modelo
+        DefaultComboBoxModel modelo
                 = new DefaultComboBoxModel(
                         listau.toArray());
         cb_serviciosa.setModel(modelo);
         agreap();
+
+
     }//GEN-LAST:event_jMenuItem9ActionPerformed
+
+    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
+        // TODO add your handling code here:
+        agreas();
+    }//GEN-LAST:event_jMenuItem10ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1427,28 +1525,39 @@ public class main extends javax.swing.JFrame {
         crearservicio.setLocationRelativeTo(this);
         crearservicio.setVisible(true);
     }
-     private void eliminas() {
+
+    private void eliminas() {
         eliminarservicio.setModal(true);
         eliminarservicio.pack();
         eliminarservicio.setLocationRelativeTo(this);
         eliminarservicio.setVisible(true);
     }
-      private void modificas() {
+
+    private void modificas() {
         modificarservicio.setModal(true);
         modificarservicio.pack();
         modificarservicio.setLocationRelativeTo(this);
         modificarservicio.setVisible(true);
     }
-          private void agreap() {
+
+    private void agreap() {
         agregarpelis.setModal(true);
         agregarpelis.pack();
         agregarpelis.setLocationRelativeTo(this);
         agregarpelis.setVisible(true);
     }
-    
+
+    private void agreas() {
+        agregarseries.setModal(true);
+        agregarseries.pack();
+        agregarseries.setLocationRelativeTo(this);
+        agregarseries.setVisible(true);
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem Login2;
     private javax.swing.JDialog agregarpelis;
+    private javax.swing.JDialog agregarseries;
     private javax.swing.JTextField apellidou;
     private javax.swing.JTextField apellidou1;
     private javax.swing.JTextField calificacions;
@@ -1479,6 +1588,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1508,7 +1618,13 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1539,6 +1655,11 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     private javax.swing.JButton jbcrearc;
     private javax.swing.JButton jbeliminausu;
     private javax.swing.JButton jbingresar;
